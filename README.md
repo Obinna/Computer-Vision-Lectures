@@ -31,3 +31,46 @@ Miniconda is lightweight and recommended.
 5. **Verify installation**:
    ```bash
    conda --version
+
+
+### Step 2 Create the Conda Environment
+
+# Create environment
+conda create -n pytorch-cv python=3.12 -y
+
+# Activate the environment
+conda activate pytorch-cv
+
+You will now see (pytorch-cv) at the beginning of your prompt – this means you're inside the environment.
+
+
+### Step 3: Install Required Libraries
+
+# Install scientific Python packages
+conda install -c conda-forge jupyterlab matplotlib scikit-learn numpy pandas pillow tqdm ipykernel -y
+
+# Install PyTorch (CPU version - recommended for class)
+pip install torch torchvision torchaudio
+
+
+
+### Step 4: Verify the Installation
+
+
+# Check Python and core packages
+python -c "import sys; print('Python version:', sys.version)"
+
+# Check PyTorch
+python -c "
+import torch
+import torchvision
+print('PyTorch version:', torch.__version__)
+print('Torchvision version:', torchvision.__version__)
+print('CUDA available:', torch.cuda.is_available())
+"
+
+
+### Step 5: Launch JupyterLab
+
+jupyter lab
+
