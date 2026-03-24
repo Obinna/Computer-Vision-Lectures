@@ -36,9 +36,11 @@ Miniconda is lightweight and recommended.
 ### Step 2 Create the Conda Environment
 
 # Create environment
+ ```bash
 conda create -n pytorch-cv python=3.12 -y
 
 # Activate the environment
+ ```bash
 conda activate pytorch-cv
 
 You will now see (pytorch-cv) at the beginning of your prompt – this means you're inside the environment.
