@@ -51,10 +51,14 @@ You will now see (pytorch-cv) at the beginning of your prompt – this means you
 ### Step 3: Install Required Libraries
 
 # Install scientific Python packages
+ ```bash
 conda install -c conda-forge jupyterlab matplotlib scikit-learn numpy pandas pillow tqdm ipykernel -y
+ ```
 
 # Install PyTorch (CPU version - recommended for class)
+ ```bash
 pip install torch torchvision torchaudio
+ ```
 
 
 
@@ -62,9 +66,12 @@ pip install torch torchvision torchaudio
 
 
 # Check Python and core packages
+ ```bash
 python -c "import sys; print('Python version:', sys.version)"
+ ```
 
 # Check PyTorch
+ ```bash
 python -c "
 import torch
 import torchvision
@@ -72,9 +79,11 @@ print('PyTorch version:', torch.__version__)
 print('Torchvision version:', torchvision.__version__)
 print('CUDA available:', torch.cuda.is_available())
 "
+```
 
 
 ### Step 5: Launch JupyterLab
-
+ ```bash
 jupyter lab
+ ```
 
