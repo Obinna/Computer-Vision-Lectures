@@ -85,6 +85,7 @@ print('CUDA available:', torch.cuda.is_available())
 ### Step 5: Launch JupyterLab
  ```bash
 jupyter lab
+```
 
 
 ### Step 6 You can instal Visual Studio Code if you prefer it. 
